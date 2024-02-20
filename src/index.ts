@@ -1,4 +1,5 @@
-import {  createPublicClient, createWalletClient } from "viem";
+import { createPublicClient } from "viem/_types/clients/createPublicClient";
+import { createWalletClient } from "viem/_types/clients/createWalletClient";
 
 
 function greet(name: string): string {

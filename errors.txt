@@ -1,0 +1,162 @@
+viem_test drdev$ tsc --build
+node_modules/viem/_types/utils/formatters/transactionRequest.d.ts:21:598 - error TS2536: Type 'K' cannot be used to index type '{ [K_1 in keyof TransactionRequestLegacy<`0x${string}`, `0x${string}`, "0x0"> as K_1 extends keyof TOverrideReturnType ? TOverrideReturnType[K_1] extends void ? never : K_1 : K_1]: K_1 extends keyof TOverrideReturnType ? TOverrideReturnType[K_1] : TransactionRequestLegacy<...>[K_1]; } & TOverrideReturnType'.
+
+21     format: (args: import("../../types/utils.js").Assign<Partial<TransactionRequest>, TOverrideParameters>) => (((import("../../types/transaction.js").TransactionRequestLegacy<`0x${string}`, `0x${string}`, "0x0"> extends infer T_2 ? { [K_1 in keyof T_2 as K_1 extends keyof TOverrideReturnType ? TOverrideReturnType[K_1] extends void ? never : K_1 : K_1]: K_1 extends keyof TOverrideReturnType ? TOverrideReturnType[K_1] : import("../../types/transaction.js").TransactionRequestLegacy<`0x${string}`, `0x${string}`, "0x0">[K_1]; } : never) & TOverrideReturnType extends infer T ? { [K in keyof T]: ((import("../../types/transaction.js").TransactionRequestLegacy<`0x${string}`, `0x${string}`, "0x0"> extends infer T_1 ? { [K_1 in keyof T_1 as K_1 extends keyof TOverrideReturnType ? TOverrideReturnType[K_1] extends void ? never : K_1 : K_1]: K_1 extends keyof TOverrideReturnType ? TOverrideReturnType[K_1] : import("../../types/transaction.js").TransactionRequestLegacy<`0x${string}`, `0x${string}`, "0x0">[K_1]; } : never) & TOverrideReturnType)[K]; } : never) | ((import("../../types/transaction.js").TransactionRequestEIP2930<`0x${string}`, `0x${string}`, "0x1"> extends infer T_5 ? { [K_3 in keyof T_5 as K_3 extends keyof TOverrideReturnType ? TOverrideReturnType[K_3] extends void ? never : K_3 : K_3]: K_3 extends keyof TOverrideReturnType ? TOverrideReturnType[K_3] : import("../../types/transaction.js").TransactionRequestEIP2930<`0x${string}`, `0x${string}`, "0x1">[K_3]; } : never) & TOverrideReturnType extends infer T_3 ? { [K_2 in keyof T_3]: ((import("../../types/transaction.js").TransactionRequestEIP2930<`0x${string}`, `0x${string}`, "0x1"> extends infer T_4 ? { [K_3 in keyof T_4 as K_3 extends keyof TOverrideReturnType ? TOverrideReturnType[K_3] extends void ? never : K_3 : K_3]: K_3 extends keyof TOverrideReturnType ? TOverrideReturnType[K_3] : import("../../types/transaction.js").TransactionRequestEIP2930<`0x${string}`, `0x${string}`, "0x1">[K_3]; } : never) & TOverrideReturnType)[K_2]; } : never) | ((import("../../types/transaction.js").TransactionRequestEIP1559<`0x${string}`, `0x${string}`, "0x2"> extends infer T_8 ? { [K_5 in keyof T_8 as K_5 extends keyof TOverrideReturnType ? TOverrideReturnType[K_5] extends void ? never : K_5 : K_5]: K_5 extends keyof TOverrideReturnType ? TOverrideReturnType[K_5] : import("../../types/transaction.js").TransactionRequestEIP1559<`0x${string}`, `0x${string}`, "0x2">[K_5]; } : never) & TOverrideReturnType extends infer T_6 ? { [K_4 in keyof T_6]: ((import("../../types/transaction.js").TransactionRequestEIP1559<`0x${string}`, `0x${string}`, "0x2"> extends infer T_7 ? { [K_5 in keyof T_7 as K_5 extends keyof TOverrideReturnType ? TOverrideReturnType[K_5] extends void ? never : K_5 : K_5]: K_5 extends keyof TOverrideReturnType ? TOverrideReturnType[K_5] : import("../../types/transaction.js").TransactionRequestEIP1559<`0x${string}`, `0x${string}`, "0x2">[K_5]; } : never) & TOverrideReturnType)[K_4]; } : never)) & { [_key in TExclude[number]]: never; };
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+node_modules/viem/_types/utils/formatters/transactionRequest.d.ts:21:1558 - error TS2536: Type 'K_2' cannot be used to index type '{ [K_3 in keyof TransactionRequestEIP2930<`0x${string}`, `0x${string}`, "0x1"> as K_3 extends keyof TOverrideReturnType ? TOverrideReturnType[K_3] extends void ? never : K_3 : K_3]: K_3 extends keyof TOverrideReturnType ? TOverrideReturnType[K_3] : TransactionRequestEIP2930<...>[K_3]; } & TOverrideReturnType'.
+
+21     format: (args: import("../../types/utils.js").Assign<Partial<TransactionRequest>, TOverrideParameters>) => (((import("../../types/transaction.js").TransactionRequestLegacy<`0x${string}`, `0x${string}`, "0x0"> extends infer T_2 ? { [K_1 in keyof T_2 as K_1 extends keyof TOverrideReturnType ? TOverrideReturnType[K_1] extends void ? never : K_1 : K_1]: K_1 extends keyof TOverrideReturnType ? TOverrideReturnType[K_1] : import("../../types/transaction.js").TransactionRequestLegacy<`0x${string}`, `0x${string}`, "0x0">[K_1]; } : never) & TOverrideReturnType extends infer T ? { [K in keyof T]: ((import("../../types/transaction.js").TransactionRequestLegacy<`0x${string}`, `0x${string}`, "0x0"> extends infer T_1 ? { [K_1 in keyof T_1 as K_1 extends keyof TOverrideReturnType ? TOverrideReturnType[K_1] extends void ? never : K_1 : K_1]: K_1 extends keyof TOverrideReturnType ? TOverrideReturnType[K_1] : import("../../types/transaction.js").TransactionRequestLegacy<`0x${string}`, `0x${string}`, "0x0">[K_1]; } : never) & TOverrideReturnType)[K]; } : never) | ((import("../../types/transaction.js").TransactionRequestEIP2930<`0x${string}`, `0x${string}`, "0x1"> extends infer T_5 ? { [K_3 in keyof T_5 as K_3 extends keyof TOverrideReturnType ? TOverrideReturnType[K_3] extends void ? never : K_3 : K_3]: K_3 extends keyof TOverrideReturnType ? TOverrideReturnType[K_3] : import("../../types/transaction.js").TransactionRequestEIP2930<`0x${string}`, `0x${string}`, "0x1">[K_3]; } : never) & TOverrideReturnType extends infer T_3 ? { [K_2 in keyof T_3]: ((import("../../types/transaction.js").TransactionRequestEIP2930<`0x${string}`, `0x${string}`, "0x1"> extends infer T_4 ? { [K_3 in keyof T_4 as K_3 extends keyof TOverrideReturnType ? TOverrideReturnType[K_3] extends void ? never : K_3 : K_3]: K_3 extends keyof TOverrideReturnType ? TOverrideReturnType[K_3] : import("../../types/transaction.js").TransactionRequestEIP2930<`0x${string}`, `0x${string}`, "0x1">[K_3]; } : never) & TOverrideReturnType)[K_2]; } : never) | ((import("../../types/transaction.js").TransactionRequestEIP1559<`0x${string}`, `0x${string}`, "0x2"> extends infer T_8 ? { [K_5 in keyof T_8 as K_5 extends keyof TOverrideReturnType ? TOverrideReturnType[K_5] extends void ? never : K_5 : K_5]: K_5 extends keyof TOverrideReturnType ? TOverrideReturnType[K_5] : import("../../types/transaction.js").TransactionRequestEIP1559<`0x${string}`, `0x${string}`, "0x2">[K_5]; } : never) & TOverrideReturnType extends infer T_6 ? { [K_4 in keyof T_6]: ((import("../../types/transaction.js").TransactionRequestEIP1559<`0x${string}`, `0x${string}`, "0x2"> extends infer T_7 ? { [K_5 in keyof T_7 as K_5 extends keyof TOverrideReturnType ? TOverrideReturnType[K_5] extends void ? never : K_5 : K_5]: K_5 extends keyof TOverrideReturnType ? TOverrideReturnType[K_5] : import("../../types/transaction.js").TransactionRequestEIP1559<`0x${string}`, `0x${string}`, "0x2">[K_5]; } : never) & TOverrideReturnType)[K_4]; } : never)) & { [_key in TExclude[number]]: never; };
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+node_modules/viem/_types/utils/formatters/transactionRequest.d.ts:21:2522 - error TS2536: Type 'K_4' cannot be used to index type '{ [K_5 in keyof TransactionRequestEIP1559<`0x${string}`, `0x${string}`, "0x2"> as K_5 extends keyof TOverrideReturnType ? TOverrideReturnType[K_5] extends void ? never : K_5 : K_5]: K_5 extends keyof TOverrideReturnType ? TOverrideReturnType[K_5] : TransactionRequestEIP1559<...>[K_5]; } & TOverrideReturnType'.
+
+21     format: (args: import("../../types/utils.js").Assign<Partial<TransactionRequest>, TOverrideParameters>) => (((import("../../types/transaction.js").TransactionRequestLegacy<`0x${string}`, `0x${string}`, "0x0"> extends infer T_2 ? { [K_1 in keyof T_2 as K_1 extends keyof TOverrideReturnType ? TOverrideReturnType[K_1] extends void ? never : K_1 : K_1]: K_1 extends keyof TOverrideReturnType ? TOverrideReturnType[K_1] : import("../../types/transaction.js").TransactionRequestLegacy<`0x${string}`, `0x${string}`, "0x0">[K_1]; } : never) & TOverrideReturnType extends infer T ? { [K in keyof T]: ((import("../../types/transaction.js").TransactionRequestLegacy<`0x${string}`, `0x${string}`, "0x0"> extends infer T_1 ? { [K_1 in keyof T_1 as K_1 extends keyof TOverrideReturnType ? TOverrideReturnType[K_1] extends void ? never : K_1 : K_1]: K_1 extends keyof TOverrideReturnType ? TOverrideReturnType[K_1] : import("../../types/transaction.js").TransactionRequestLegacy<`0x${string}`, `0x${string}`, "0x0">[K_1]; } : never) & TOverrideReturnType)[K]; } : never) | ((import("../../types/transaction.js").TransactionRequestEIP2930<`0x${string}`, `0x${string}`, "0x1"> extends infer T_5 ? { [K_3 in keyof T_5 as K_3 extends keyof TOverrideReturnType ? TOverrideReturnType[K_3] extends void ? never : K_3 : K_3]: K_3 extends keyof TOverrideReturnType ? TOverrideReturnType[K_3] : import("../../types/transaction.js").TransactionRequestEIP2930<`0x${string}`, `0x${string}`, "0x1">[K_3]; } : never) & TOverrideReturnType extends infer T_3 ? { [K_2 in keyof T_3]: ((import("../../types/transaction.js").TransactionRequestEIP2930<`0x${string}`, `0x${string}`, "0x1"> extends infer T_4 ? { [K_3 in keyof T_4 as K_3 extends keyof TOverrideReturnType ? TOverrideReturnType[K_3] extends void ? never : K_3 : K_3]: K_3 extends keyof TOverrideReturnType ? TOverrideReturnType[K_3] : import("../../types/transaction.js").TransactionRequestEIP2930<`0x${string}`, `0x${string}`, "0x1">[K_3]; } : never) & TOverrideReturnType)[K_2]; } : never) | ((import("../../types/transaction.js").TransactionRequestEIP1559<`0x${string}`, `0x${string}`, "0x2"> extends infer T_8 ? { [K_5 in keyof T_8 as K_5 extends keyof TOverrideReturnType ? TOverrideReturnType[K_5] extends void ? never : K_5 : K_5]: K_5 extends keyof TOverrideReturnType ? TOverrideReturnType[K_5] : import("../../types/transaction.js").TransactionRequestEIP1559<`0x${string}`, `0x${string}`, "0x2">[K_5]; } : never) & TOverrideReturnType extends infer T_6 ? { [K_4 in keyof T_6]: ((import("../../types/transaction.js").TransactionRequestEIP1559<`0x${string}`, `0x${string}`, "0x2"> extends infer T_7 ? { [K_5 in keyof T_7 as K_5 extends keyof TOverrideReturnType ? TOverrideReturnType[K_5] extends void ? never : K_5 : K_5]: K_5 extends keyof TOverrideReturnType ? TOverrideReturnType[K_5] : import("../../types/transaction.js").TransactionRequestEIP1559<`0x${string}`, `0x${string}`, "0x2">[K_5]; } : never) & TOverrideReturnType)[K_4]; } : never)) & { [_key in TExclude[number]]: never; };
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+node_modules/viem/_types/utils/formatters/transaction.d.ts:51:217 - error TS2536: Type 'K_1' cannot be used to index type '{ gas: bigint; value: bigint; blockHash: `0x${string}` | null; blockNumber: bigint | null; from: `0x${string}`; hash: `0x${string}`; input: `0x${string}`; nonce: number; r: `0x${string}`; s: `0x${string}`; to: `0x${string}` | null; ... 11 more ...; type: "legacy"; }'.
+
+ 51     } extends infer T_2 ? { [K_1 in keyof T_2 as K_1 extends keyof TOverrideReturnType ? TOverrideReturnType[K_1] extends void ? never : K_1 : K_1]: K_1 extends keyof TOverrideReturnType ? TOverrideReturnType[K_1] : {
+                                                                                                                                                                                                                            ~
+ 52         gas: bigint;
+    ~~~~~~~~~~~~~~~~~~~~
+... 
+ 74         type: "legacy";
+    ~~~~~~~~~~~~~~~~~~~~~~~
+ 75     }[K_1]; } : never) & TOverrideReturnType extends infer T ? { [K in keyof T]: (({
+    ~~~~~~~~~~
+
+node_modules/viem/_types/utils/formatters/transaction.d.ts:75:82 - error TS2536: Type 'K' cannot be used to index type '{ [K_1 in keyof { gas: bigint; value: bigint; blockHash: `0x${string}` | null; blockNumber: bigint | null; from: `0x${string}`; hash: `0x${string}`; input: `0x${string}`; nonce: number; r: `0x${string}`; s: `0x${string}`; to: `0x${string}` | null; ... 11 more ...; type: "legacy"; } as K_1 extends keyof TOverrideRetu...'.
+
+ 75     }[K_1]; } : never) & TOverrideReturnType extends infer T ? { [K in keyof T]: (({
+                                                                                     ~~~
+ 76         gas: bigint;
+    ~~~~~~~~~~~~~~~~~~~~
+... 
+122         type: "legacy";
+    ~~~~~~~~~~~~~~~~~~~~~~~
+123     }[K_1]; } : never) & TOverrideReturnType)[K]; } : never) | (({
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+node_modules/viem/_types/utils/formatters/transaction.d.ts:99:217 - error TS2536: Type 'K_1' cannot be used to index type '{ gas: bigint; value: bigint; blockHash: `0x${string}` | null; blockNumber: bigint | null; from: `0x${string}`; hash: `0x${string}`; input: `0x${string}`; nonce: number; r: `0x${string}`; s: `0x${string}`; to: `0x${string}` | null; ... 11 more ...; type: "legacy"; }'.
+
+ 99     } extends infer T_1 ? { [K_1 in keyof T_1 as K_1 extends keyof TOverrideReturnType ? TOverrideReturnType[K_1] extends void ? never : K_1 : K_1]: K_1 extends keyof TOverrideReturnType ? TOverrideReturnType[K_1] : {
+                                                                                                                                                                                                                            ~
+100         gas: bigint;
+    ~~~~~~~~~~~~~~~~~~~~
+... 
+122         type: "legacy";
+    ~~~~~~~~~~~~~~~~~~~~~~~
+123     }[K_1]; } : never) & TOverrideReturnType)[K]; } : never) | (({
+    ~~~~~~~~~~
+
+node_modules/viem/_types/utils/formatters/transaction.d.ts:147:217 - error TS2536: Type 'K_3' cannot be used to index type '{ blockHash: `0x${string}` | null; blockNumber: bigint | null; from: `0x${string}`; gas: bigint; hash: `0x${string}`; input: `0x${string}`; nonce: number; r: `0x${string}`; s: `0x${string}`; to: `0x${string}` | null; transactionIndex: number | null; ... 11 more ...; type: "eip2930"; }'.
+
+147     } extends infer T_5 ? { [K_3 in keyof T_5 as K_3 extends keyof TOverrideReturnType ? TOverrideReturnType[K_3] extends void ? never : K_3 : K_3]: K_3 extends keyof TOverrideReturnType ? TOverrideReturnType[K_3] : {
+                                                                                                                                                                                                                            ~
+148         blockHash: `0x${string}` | null;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+... 
+170         type: "eip2930";
+    ~~~~~~~~~~~~~~~~~~~~~~~~
+171     }[K_3]; } : never) & TOverrideReturnType extends infer T_3 ? { [K_2 in keyof T_3]: (({
+    ~~~~~~~~~~
+
+node_modules/viem/_types/utils/formatters/transaction.d.ts:171:88 - error TS2536: Type 'K_2' cannot be used to index type '{ [K_3 in keyof { blockHash: `0x${string}` | null; blockNumber: bigint | null; from: `0x${string}`; gas: bigint; hash: `0x${string}`; input: `0x${string}`; nonce: number; r: `0x${string}`; s: `0x${string}`; to: `0x${string}` | null; transactionIndex: number | null; ... 11 more ...; type: "eip2930"; } as K_3 extends ...'.
+
+171     }[K_3]; } : never) & TOverrideReturnType extends infer T_3 ? { [K_2 in keyof T_3]: (({
+                                                                                           ~~~
+172         blockHash: `0x${string}` | null;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+... 
+218         type: "eip2930";
+    ~~~~~~~~~~~~~~~~~~~~~~~~
+219     }[K_3]; } : never) & TOverrideReturnType)[K_2]; } : never) | (({
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+node_modules/viem/_types/utils/formatters/transaction.d.ts:195:217 - error TS2536: Type 'K_3' cannot be used to index type '{ blockHash: `0x${string}` | null; blockNumber: bigint | null; from: `0x${string}`; gas: bigint; hash: `0x${string}`; input: `0x${string}`; nonce: number; r: `0x${string}`; s: `0x${string}`; to: `0x${string}` | null; transactionIndex: number | null; ... 11 more ...; type: "eip2930"; }'.
+
+195     } extends infer T_4 ? { [K_3 in keyof T_4 as K_3 extends keyof TOverrideReturnType ? TOverrideReturnType[K_3] extends void ? never : K_3 : K_3]: K_3 extends keyof TOverrideReturnType ? TOverrideReturnType[K_3] : {
+                                                                                                                                                                                                                            ~
+196         blockHash: `0x${string}` | null;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+... 
+218         type: "eip2930";
+    ~~~~~~~~~~~~~~~~~~~~~~~~
+219     }[K_3]; } : never) & TOverrideReturnType)[K_2]; } : never) | (({
+    ~~~~~~~~~~
+
+node_modules/viem/_types/utils/formatters/transaction.d.ts:243:217 - error TS2536: Type 'K_5' cannot be used to index type '{ blockHash: `0x${string}` | null; blockNumber: bigint | null; from: `0x${string}`; gas: bigint; hash: `0x${string}`; input: `0x${string}`; nonce: number; r: `0x${string}`; s: `0x${string}`; to: `0x${string}` | null; transactionIndex: number | null; ... 11 more ...; type: "eip1559"; }'.
+
+243     } extends infer T_8 ? { [K_5 in keyof T_8 as K_5 extends keyof TOverrideReturnType ? TOverrideReturnType[K_5] extends void ? never : K_5 : K_5]: K_5 extends keyof TOverrideReturnType ? TOverrideReturnType[K_5] : {
+                                                                                                                                                                                                                            ~
+244         blockHash: `0x${string}` | null;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+... 
+266         type: "eip1559";
+    ~~~~~~~~~~~~~~~~~~~~~~~~
+267     }[K_5]; } : never) & TOverrideReturnType extends infer T_6 ? { [K_4 in keyof T_6]: (({
+    ~~~~~~~~~~
+
+node_modules/viem/_types/utils/formatters/transaction.d.ts:267:88 - error TS2536: Type 'K_4' cannot be used to index type '{ [K_5 in keyof { blockHash: `0x${string}` | null; blockNumber: bigint | null; from: `0x${string}`; gas: bigint; hash: `0x${string}`; input: `0x${string}`; nonce: number; r: `0x${string}`; s: `0x${string}`; to: `0x${string}` | null; transactionIndex: number | null; ... 11 more ...; type: "eip1559"; } as K_5 extends ...'.
+
+267     }[K_5]; } : never) & TOverrideReturnType extends infer T_6 ? { [K_4 in keyof T_6]: (({
+                                                                                           ~~~
+268         blockHash: `0x${string}` | null;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+... 
+314         type: "eip1559";
+    ~~~~~~~~~~~~~~~~~~~~~~~~
+315     }[K_5]; } : never) & TOverrideReturnType)[K_4]; } : never) | (({
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+node_modules/viem/_types/utils/formatters/transaction.d.ts:291:217 - error TS2536: Type 'K_5' cannot be used to index type '{ blockHash: `0x${string}` | null; blockNumber: bigint | null; from: `0x${string}`; gas: bigint; hash: `0x${string}`; input: `0x${string}`; nonce: number; r: `0x${string}`; s: `0x${string}`; to: `0x${string}` | null; transactionIndex: number | null; ... 11 more ...; type: "eip1559"; }'.
+
+291     } extends infer T_7 ? { [K_5 in keyof T_7 as K_5 extends keyof TOverrideReturnType ? TOverrideReturnType[K_5] extends void ? never : K_5 : K_5]: K_5 extends keyof TOverrideReturnType ? TOverrideReturnType[K_5] : {
+                                                                                                                                                                                                                            ~
+292         blockHash: `0x${string}` | null;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+... 
+314         type: "eip1559";
+    ~~~~~~~~~~~~~~~~~~~~~~~~
+315     }[K_5]; } : never) & TOverrideReturnType)[K_4]; } : never) | (({
+    ~~~~~~~~~~
+
+node_modules/viem/_types/utils/formatters/transaction.d.ts:339:219 - error TS2536: Type 'K_7' cannot be used to index type '{ blockHash: `0x${string}` | null; blockNumber: bigint | null; from: `0x${string}`; gas: bigint; hash: `0x${string}`; input: `0x${string}`; nonce: number; r: `0x${string}`; s: `0x${string}`; to: `0x${string}` | null; transactionIndex: number | null; ... 11 more ...; type: "eip4844"; }'.
+
+339     } extends infer T_11 ? { [K_7 in keyof T_11 as K_7 extends keyof TOverrideReturnType ? TOverrideReturnType[K_7] extends void ? never : K_7 : K_7]: K_7 extends keyof TOverrideReturnType ? TOverrideReturnType[K_7] : {
+                                                                                                                                                                                                                              ~
+340         blockHash: `0x${string}` | null;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+... 
+362         type: "eip4844";
+    ~~~~~~~~~~~~~~~~~~~~~~~~
+363     }[K_7]; } : never) & TOverrideReturnType extends infer T_9 ? { [K_6 in keyof T_9]: (({
+    ~~~~~~~~~~
+
+node_modules/viem/_types/utils/formatters/transaction.d.ts:363:88 - error TS2536: Type 'K_6' cannot be used to index type '{ [K_7 in keyof { blockHash: `0x${string}` | null; blockNumber: bigint | null; from: `0x${string}`; gas: bigint; hash: `0x${string}`; input: `0x${string}`; nonce: number; r: `0x${string}`; s: `0x${string}`; to: `0x${string}` | null; transactionIndex: number | null; ... 11 more ...; type: "eip4844"; } as K_7 extends ...'.
+
+363     }[K_7]; } : never) & TOverrideReturnType extends infer T_9 ? { [K_6 in keyof T_9]: (({
+                                                                                           ~~~
+364         blockHash: `0x${string}` | null;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+... 
+410         type: "eip4844";
+    ~~~~~~~~~~~~~~~~~~~~~~~~
+411     }[K_7]; } : never) & TOverrideReturnType)[K_6]; } : never)) & { [_key in TExclude[number]]: never; };
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+node_modules/viem/_types/utils/formatters/transaction.d.ts:387:219 - error TS2536: Type 'K_7' cannot be used to index type '{ blockHash: `0x${string}` | null; blockNumber: bigint | null; from: `0x${string}`; gas: bigint; hash: `0x${string}`; input: `0x${string}`; nonce: number; r: `0x${string}`; s: `0x${string}`; to: `0x${string}` | null; transactionIndex: number | null; ... 11 more ...; type: "eip4844"; }'.
+
+387     } extends infer T_10 ? { [K_7 in keyof T_10 as K_7 extends keyof TOverrideReturnType ? TOverrideReturnType[K_7] extends void ? never : K_7 : K_7]: K_7 extends keyof TOverrideReturnType ? TOverrideReturnType[K_7] : {
+                                                                                                                                                                                                                              ~
+388         blockHash: `0x${string}` | null;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+... 
+410         type: "eip4844";
+    ~~~~~~~~~~~~~~~~~~~~~~~~
+411     }[K_7]; } : never) & TOverrideReturnType)[K_6]; } : never)) & { [_key in TExclude[number]]: never; };
+    ~~~~~~~~~~
+
+
+Found 15 errors.
